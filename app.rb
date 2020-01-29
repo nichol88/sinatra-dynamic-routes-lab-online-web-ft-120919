@@ -1,5 +1,5 @@
 require_relative 'config/environment'
-gem 'pry' => require 'pry'
+
 class App < Sinatra::Base
   # Write your code here!
   get '/reversename/:name' do
@@ -20,7 +20,7 @@ class App < Sinatra::Base
 
   get '/:operation/:number1/:number2' do
     case params[:operation]
-      binding.pry
+      
     when 'multiply'
       params[:number1] * params[:number2]
     when 'divide'
