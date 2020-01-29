@@ -1,5 +1,5 @@
 require_relative 'config/environment'
-require 'pry'
+gem 'pry' => require 'pry'
 class App < Sinatra::Base
   # Write your code here!
   get '/reversename/:name' do
