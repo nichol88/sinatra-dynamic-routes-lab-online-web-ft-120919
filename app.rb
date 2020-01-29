@@ -20,6 +20,7 @@ class App < Sinatra::Base
 
   get '/:operation/:number1/:number2' do
     case params[:operation]
+      binding.pry
     when 'multiply'
       params[:number1] * params[:number2]
     when 'divide'
