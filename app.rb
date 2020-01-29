@@ -14,7 +14,7 @@ class App < Sinatra::Base
     erb :phrase_number
   end
 
-  get 'say/:word1/:word2/:word3/:word4/:word5' do
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
     erb :wordss
   end
 
